@@ -1,0 +1,15 @@
+ {% comment %} this load static line call the static files {% endcomment %}
+ {% load static %}
+ <head>
+ {% comment %} links - fonts,css  nav - bar  {% endcomment %}
+ <link rel="stylesheet" href="{% static 'style/signup.css' %}">
+ <link rel='stylesheet' href ="{% static 'style/login.css' %}">
+ 
+ </head>
+ {% block signup %}{% endblock  %}
+ {%block login %} {%endblock%}
+ <script>
+    var host  = window.locaction.portocal+'//'+window.locaction.portocal
+    document.getElementById('signup').href = `${host}/signup`
+    document.getElementById('login').href = `${host}/login`
+ </script>
